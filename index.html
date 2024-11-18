@@ -150,6 +150,22 @@
             margin-bottom: 10px;
         }
 
+        .project-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-link:hover {
+            background-color: #0056b3;
+        }
+
         .contact {
             background: #f9f9f9;
         }
@@ -224,6 +240,7 @@
                     <div class="project-info">
                         <h3>Manipal Institute of Technology Project</h3>
                         <p>A showcase of creative video editing and storytelling techniques.</p>
+                        <a href="https://drive.google.com/drive/folders/1J2BrMpgp1Nvd_ARkXKa-RVASD1U7w-Fp?usp=drive_link" target="_blank" class="project-link">More Projects Here</a>
                     </div>
                 </div>
             </div>
@@ -231,22 +248,20 @@
     </section>
 
     <section id="contact" class="section contact">
-    <div class="container">
-        <h2 class="section-title">Get in Touch</h2>
-        <div class="contact-content">
-            <p>Looking for a professional video editor? Let's work together to bring your vision to life.</p>
-            <a href="mailto:vishnuvardhan.4853@gmail.com?subject=Video%20Editing%20Project%20Inquiry" class="contact-button">Email Me</a>
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <p>Looking for a professional video editor? Let's work together to bring your vision to life.</p>
+                <a href="mailto:vishnuvardhan.4853@gmail.com?subject=Video%20Editing%20Project%20Inquiry" class="contact-button">Email Me</a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <script>
-        // Initialize Lucide icons
         document.addEventListener('DOMContentLoaded', function() {
             lucide.createIcons();
         });
 
-        // Video control functions
         function togglePlay(videoId) {
             const video = document.getElementById(videoId);
             const button = video.parentElement.querySelector('.play-pause i');
@@ -270,7 +285,6 @@
             lucide.createIcons();
         }
 
-        // Add hover effect to show controls
         document.querySelectorAll('.video-container').forEach(container => {
             container.addEventListener('mouseover', () => {
                 container.querySelector('.video-controls').style.opacity = '1';
